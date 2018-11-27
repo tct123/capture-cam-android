@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CropperActivity">
+
+    <com.cynobit.capture_cam.cropper.CropperView
+        android:id="@+id/cropperView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="center"
+        android:visibility="visible" />
+
+    <com.cynobit.capture_cam.cropoverlay.CropOverlayView
+        android:id="@+id/cropOverlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:borderColor="#00000000"
+        app:cornerRadius="1dp"
+        app:drawCircle="true"
+        app:guideLines="false"
+        app:lightTextColor="#552a2928"
+        app:marginSide="0dp"
+        app:marginTop="0dp" />
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/overlay_circle"
+        android:visibility="gone" />
+
+
+</android.support.constraint.ConstraintLayout>
